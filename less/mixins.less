@@ -1,1 +1,40 @@
 // Mixins Here
+
+.btn {
+    .my-button();
+    .animation-strobe();
+}
+
+@media @mobile {
+    .btn {
+        width: 100%;
+    }
+}
+
+
+.my-button(@bg-color:#22283A, @font-color:white) {
+    color: @font-color;
+    background-color: @bg-color;
+    cursor: pointer;
+    width: 30%;
+    padding: 5% 5%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @font-color;
+    }
+}
+
+.animation-strobe () {
+    animation: disco 500ms infinite;
+  
+    @keyframes disco {
+      0% { background: red; box-shadow: 0 0 -10px red; }
+      40% { background: blue; box-shadow: 0 0 20px blue; }
+      60% { background: purple; box-shadow: 0 0 20px purple; }
+      100% { background: aqua; box-shadow: 0 0 -10px aqua; }
+    }
+  }
