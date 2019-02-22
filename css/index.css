@@ -1,3 +1,36 @@
+.btn {
+  color: white;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 20%;
+  padding: 10px 5%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  animation: disco 500ms infinite;
+}
+.btn:hover {
+  color: #22283A;
+  background-color: white;
+}
+@keyframes disco {
+  0% {
+    background: red;
+    box-shadow: 0 0 -10px red;
+  }
+  40% {
+    background: blue;
+    box-shadow: 0 0 20px blue;
+  }
+  60% {
+    background: purple;
+    box-shadow: 0 0 20px purple;
+  }
+  100% {
+    background: aqua;
+    box-shadow: 0 0 -10px aqua;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +192,35 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.top-bar-content {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #F1F1F1;
+  background-color: #F1F1F1;
+  padding: 10px 0;
+  width: 100%;
+  align-items: center;
+}
+.top-bar-content .navigation-info {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+}
+.top-bar-content h1 {
+  font-size: 4rem;
+}
+.top-bar-content .navbar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.top-bar-content a {
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
