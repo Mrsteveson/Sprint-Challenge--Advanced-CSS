@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    A responsive website adjusts the sizing of a page in order to adapt to various screen resolutions through media queries and other styling concepts. Meanwhile, an adaptive website creates different webpages based upon those various screen resolutions, which results in a different page being displayed based upon what device the user is viewing the page from.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first versus desktop first just means that when developing your website and coding it to be adaptive to various screen resolutions, you are starting with either the desktop view or the mobile view first. Doing on or the other is up to the big-boss's instructions, but it simply describes where your work began whether it be on the mobile view or the desktop view.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Using 'font-size: 62.5%' in the html tag allows us to conveniently use rem units throughout our page as a unit of measurement rather than pixels. It does this by helping set a more developer friendly calculation to determine the number of rems needed to display a certain font-size, for example while using font-size: 62.5%, we can then use 1.6rems to give us responsive font-size of 16px across our website.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing offers us as developers a number of tools that allow us to make our lives as coders easier. We can assign variables, mixins and other reusable elements to make writing our code faster and cleaner. Furthermore, we can use a number of different css files and bring them into our index.css file allowing us to organize our work in an easily managed way further allowing us to be more efficient in our work. Essentially it boils down to the simple fact that it can allow us to write less code, which in turn makes our lives as coders easier.
+
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My absolute favorite concept in preprocessing are mixins, hands down absolutely love them. I spent a solid 30minutes or so last night messing around with an animation mixin to use on my buttons that turns them into glowing disco strobe lights, (might have to include seizure warning disclaimers, the buttons are a little aggressive).
+    
+    The concept that gives me the most trouble is definitely getting used to properly nesting selectors within selectors to tidy up my css. My css can end up getting a little messy, and trying to properly nest everything can end up giving me plenty of headache, especially when I was working with media queries.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
