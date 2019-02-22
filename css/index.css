@@ -323,11 +323,19 @@ footer {
   }
 }
 @media ( max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: unset;
+  }
   .home .walk .walk-text {
     width: 100%;
+    padding: 0 4% 5% 4%;
   }
   .home .walk .walk-img {
-    width: 100%;
+    width: 90%;
     display: flex;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
   }
 }
